@@ -1,0 +1,221 @@
+.rampart-one-regular {
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #ffffff;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.titleblock {
+    font-family: "Rampart One", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin: 0 20px;
+    padding: 50px;
+    font-size: 120%;
+}
+
+.titleblock p {
+    font-size: 200%;
+}
+
+.mainvisual {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.mainvisual h1 {
+    font-size: 200%;
+    color: white;
+    margin: 3px;
+}
+
+.mainvisual h2 {
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    margin: 2px;
+}
+
+.choice-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.choice-list button {
+    width: 200px;
+    margin: 10px 30px;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: fadeEffect 9s infinite;
+}
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0.1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+ul {
+    padding: 0;
+    border-top: 1px solid #f2f2f2;
+    height: 400px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.list ul#personList li,
+.list ul#taskList li {
+    font-size: 30px;
+    color: #292626;
+    display: table-cell;
+    float: left;
+    clear: left;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.list ul#personList li:hover,
+.list ul#taskList li:hover {
+    background: rgba(177, 177, 177, 0.5);
+    color: #ffffff;
+    cursor: url('../img/delete-file.png'), auto;
+}
+
+#finalAssignment ul li,
+#historyAssignment ul li {
+    font-size: 30px;
+}
+
+.inputbox {
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: #292626;
+    background-color: #cecece;
+    width: 100%;
+    padding: 2px;
+}
+
+input::placeholder {
+    color: #807e7d;
+}
+
+.titleblock img {
+    margin-right: 10px;
+}
+
+.field_center {
+    display: flex;
+    justify-content: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.subdiv {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 20px;
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.popup-content {
+    margin: 20px auto 3px;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+    border-radius: 50%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
